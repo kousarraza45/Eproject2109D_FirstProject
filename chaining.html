@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        #box{
+            color: green;
+            width: '100px';
+            height: '100px';
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+
+        <h2>This is aptech garden center</h2>
+    </div>
+    <button id="chaining">Chaining Method</button>
+<script>
+    $(document).ready(function()
+    {
+        $("#chaining").click(function()
+        {
+            $("#box").css("color","red")
+           .animate({
+               width:'100px',
+              fontSize:'25px'
+           });
+        });
+    });
+
+</script>
+
+
+</body>
+</html>
